@@ -240,8 +240,15 @@ if (message.content.startsWith(adminprefix + 'setT')) {
   client.user.setGame(argresult, "https://www.twitch.tv/Vrgo3gamer");
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
 }
+	
+	client.on('message', message => {
+  if (true) {
+if (message.content === '^^support') {
+      message.author.send(' |https://discord.gg/Phykscs لـ أي استفسار').catch(e => console.log(e.stack));
 
-});
+    }
+   } 
+  });
 
 client.on("message", message => {
  if (message.content === `${prefix}help`) {
